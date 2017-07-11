@@ -1,0 +1,519 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* @font-face code */
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('fonts/Raleway-LightItalic.eot');
+	src: url('fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Raleway-LightItalic.woff') format('woff'),
+		url('fonts/Raleway-LightItalic.ttf') format('truetype'),
+		url('fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('fonts/Raleway-Medium.eot');
+	src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Raleway-Medium.woff') format('woff'),
+		url('fonts/Raleway-Medium.ttf') format('truetype'),
+		url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('fonts/Raleway-MediumItalic.eot');
+	src: url('fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Raleway-MediumItalic.woff') format('woff'),
+		url('fonts/Raleway-MediumItalic.ttf') format('truetype'),
+		url('fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('fonts/Raleway-Light.eot');
+	src: url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Raleway-Light.woff') format('woff'),
+		url('fonts/Raleway-Light.ttf') format('truetype'),
+		url('fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('fonts/PlayfairDisplay-Regular.eot');
+	src: url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/PlayfairDisplay-Regular.woff') format('woff'),
+		url('fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+		url('fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('fonts/PlayfairDisplay-Bold.eot');
+	src: url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/PlayfairDisplay-Bold.woff') format('woff'),
+		url('fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+		url('fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('fonts/PlayfairDisplay-BoldItalic.eot');
+	src: url('fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
+		url('fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+		url('fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('fonts/PlayfairDisplay-Italic.eot');
+	src: url('fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+		url('fonts/PlayfairDisplay-Italic.woff') format('woff'),
+		url('fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+		url('fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* COLOURS 
+
+#2d2d2d - body font colour
+#969696 - light grey
+#e2574c - orange brand colour (links, headings, buttons)
+#b64036 - link hover state
+#d7d7d7 - light grey border colour
+#242424 - dark grey background, footer
+
+*/
+
+@media screen and (max-width: 400px) {
+
+/* TEXT STYLES */
+
+body {
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 500;
+	font-style: normal;
+  font-color: #2d2d2d;
+}
+
+p {
+  font-size: 14px;
+}
+
+.main-container {
+  width: 400px;
+  height: 900px;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.logo {
+  width: 125px;
+  height: auto;
+padding: 0px;
+margin: 0px;
+
+}
+
+.aloha-logo {
+  width: 125px;
+	height: auto;
+	margin-left: 0px;
+	padding: 10px;
+}
+
+.cart {
+	width: 100px;
+	height: auto;
+	margin-right: 0px;
+}
+hr.rule {
+	border-top: 0.1px solid #969696;
+	width: 380px;
+}
+
+/* NAVIGATION BAR */
+
+.navigation {
+	text-align: center;
+	margin: 15px;
+	font-size: 0.9em;
+}
+
+.navigation li {
+	list-style: none;
+	display: inline;
+	text-transform: uppercase;
+	padding: 0px 10px 0px 10px;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: #e2574c;
+}
+
+.navigation a:hover {
+	color: #b64036
+}
+
+/* HERO-IMAGE */
+
+.hero-image {
+height: 400px;
+display: flex;
+text-align: center;
+justify-content: center;
+flex-direction: column;
+background:
+url(images/banner-girl.png) no-repeat center,
+url(images/flower-bkgd.jpg) center;
+background-size: contain, cover;
+}
+
+.hero-image h3 {
+	text-transform: uppercase;
+	color: white;
+	padding-bottom: 20px;
+	text-shadow: 1px 1px 2px #969696;
+}
+
+.hero-image h1 {
+	font-family: 'Playfair Display';
+  font-weight: normal;
+	font-style: normal;
+  font-size: 2.5em;
+  color: white;
+	text-shadow: 1px 1px 2px #969696;
+	padding: 0px 20px 0px 20px;
+}
+
+/* HAND-CRAFTED STYLES */
+
+.styles {
+	height: 260px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 0px 20px 0px 20px;
+}
+
+.styles h1 {
+	font-size: 2.1em;
+	font-family: 'Playfair Display';
+  	font-weight: normal;
+	font-style: italic;
+	padding-bottom: 20px;
+}
+
+.styles span {
+	font-family: 'Playfair Display', Arial, sans-serif;
+  	font-weight: bold;
+	font-style: normal;
+}
+
+.styles p {
+	font-family: 'Raleway';
+  font-weight: 300;
+	font-style: normal;
+  margin: 0px auto;
+  line-height: 2em;
+	font-size: 1em;
+	/* text-align: center; -- doesn't work for centering in div */
+}
+
+/* PRODUCT GALLERY */
+
+.products {
+	max-width: 400px;
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
+}
+
+.products div {
+	height: 200px;
+	display: flex;
+	align-items: center;
+justify-content: center;
+color: white;
+font-size: 1.4em;
+text-shadow: 1px 1px 2px #969696;
+}
+
+.products a {
+	text-decoration: none;
+	color: white;
+}
+
+.mens { 
+	max-width: 100%;
+	height: 200px;
+	flex: 1 0 100%;
+	margin: auto;
+	background: url(images/mens-category.jpg) no-repeat;
+	background-size: cover;
+}
+
+.trends { 
+	max-width: 50%;
+	height: 200px;
+	flex: 1 0 100%;
+	margin: auto;
+	background: url(images/trends-category.jpg) no-repeat;
+	background-size: cover;
+}
+
+.glasses { 
+	max-width: 50%;
+	height: 200px;
+	flex: 1 0 100%;
+	margin: auto;
+	background: url(images/glasses-category.jpg) no-repeat;
+	background-size: cover;
+}
+
+.sale { 
+	max-width: 50%;
+	height: 200px;
+	flex: 1 0 100%;
+	margin: auto;
+	background: url(images/sale-category.jpg) no-repeat;
+	background-size: cover;
+}
+
+.bags {
+	max-width: 50%;
+	height: 200px;
+	flex: 1 0 100%;
+	margin: auto;
+	background: url(images/bags-category.jpg) no-repeat;
+	background-size: cover;
+}
+
+.womens {
+	max-width: 100%;
+	height: 200px;
+	flex: 1 0 100%;
+	margin: auto;
+	background: url(images/womens-category.jpg) no-repeat;
+	background-size: cover;
+}
+
+MOST-LOVED PRODUCTS 
+
+.most-loved {
+height: 675px;
+padding-top: 60px;
+}
+
+.most-loved li {
+	display: inline;
+	text-align: center;
+}
+
+.most-loved h1 {
+	font-size: 2em;
+	font-family: 'Playfair Display';
+  	font-weight: normal;
+	font-style: italic;
+	padding-bottom: 20px;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.most-loved h2 {
+	font-family: 'Playfair Display';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.3em;
+	color: #e2574c;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.most-loved h3 {
+	font-family: Raleway;
+	font-weight: 300;
+	font-style: normal;
+	color: #969696;
+	font-size: 0.65em;
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.most-loved p {
+	font-family: 'Raleway';
+	color: #969696;
+}
+
+.most-loved span {
+	font-family: 'Playfair Display', Arial, sans-serif;
+  	font-weight: bold;
+	font-style: normal;
+}
+
+/* SIGN-UP FOR UPDATES */
+
+.updates {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	height: 335px;
+	background-image: url(images/wave-bkgd.jpg);
+	background-position: bottom;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-shadow: 1px 1px 2px #969696;
+}
+
+.updates h1 {
+	font-size: 2em;
+	font-family: 'Playfair Display', Georgia, serif;
+  	font-weight: normal;
+	font-style: italic;
+	padding-bottom: 20px;
+	color: white;
+}
+
+.updates span {
+	font-family: 'Playfair Display', Arial, sans-serif;
+  font-weight: bold;
+	font-style: normal;
+}
+
+.updates p {
+	font-family: 'Raleway';
+	color: white;
+	font-size: 1em;
+  	font-weight: 300;
+	font-style: normal;
+  	margin: 0px auto;
+  	line-height: 2em;
+}
+
+.subscription {
+	color: white;
+	width: 300px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+}
+footer {
+  height: 300px;
+  background-color: black;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: white;
+	font-size: 0.8em;
+	font-family: 'Playfair Display', Arial, sans-serif;
+  font-weight: normal;
+	font-style: normal;
+	line-height: 1.5em;
+}
+
+.powered-by {
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+
+.address {
+	color: #969696;
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+
+.contact {
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+
+.social-media a {
+	color: white;
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+
+
+}
+
