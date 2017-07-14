@@ -1,5 +1,10 @@
+$(function() {
 $('.carousel').flickity({
   // options
-  cellAlign: 'left',
-  contain: true
+  //cellAlign: 'center',
+ // contain: true,
+  autoPlay: true,
+  prevNextButtons: false
+});
+
 });

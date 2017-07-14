@@ -323,7 +323,7 @@ text-shadow: 1px 1px 2px #969696;
 }
 
 .mens, .womens {
-max-width: 100%;
+	max-width: 100%;
 	height: 200px;
 	flex: 1 0 100%;
 	margin: auto;
@@ -334,12 +334,16 @@ max-width: 100%;
 }
 
 .mens { 
-	background: url(images/mens-category.jpg) no-repeat;
+	background: 
+	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+	url(images/mens-category.jpg) no-repeat;
 	background-size: cover;
 }
 
 .womens {
-	background: url(images/womens-category.jpg) no-repeat;
+	background: 
+	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+	url(images/womens-category.jpg) no-repeat;
 	background-size: cover;
 }
 
@@ -354,7 +358,9 @@ max-width: 50%;
 }
 
 .trends { 
-	background: url(images/trends-category.jpg) no-repeat;
+	background: 
+	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+	url(images/trends-category.jpg) no-repeat;
 	background-size: cover;
 	
 }
@@ -370,18 +376,24 @@ max-width: 50%;
 }
 
 .glasses { 
-	background: url(images/glasses-category.jpg) no-repeat;
+	background: 
+	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+	url(images/glasses-category.jpg) no-repeat;
 	background-size: cover;
 	
 }
 
 .sale { 
-	background: url(images/sale-category.jpg) no-repeat;
+	background: 
+	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+	url(images/sale-category.jpg) no-repeat;
 	background-size: cover;
 }
 
 .bags {
-	background: url(images/bags-category.jpg) no-repeat;
+	background: 
+	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+	url(images/bags-category.jpg) no-repeat;
 	background-size: cover;
 }
 
@@ -397,19 +409,18 @@ background-color: white;
 * { box-sizing: border-box; }
 
 .carousel {
-  background: #EEE;
+  background-color: white;
 }
 
 .carousel-cell {
-  width: 100%;
-  height: 510px;
-  background-color: white;
+  /*width: 100%;
+  height: 510px;*/
   counter-increment: gallery-cell;
 }
 
 .carousel img {
-	width: 80%;
-	margin-bottom: 20px;
+	/*width: 80%;
+	margin-bottom: 20px;*/
 }
 
 .most-loved li {
@@ -471,7 +482,9 @@ background-color: white;
 	flex-direction: column;
 	text-align: center;
 	height: 335px;
-	background-image: url(images/wave-bkgd.jpg);
+	background-image: 
+	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+	url(images/wave-bkgd.jpg);
 	background-position: bottom;
 	padding-left: 5px;
 	padding-right: 5px;
