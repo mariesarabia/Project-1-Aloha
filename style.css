@@ -295,7 +295,6 @@ hr.rule {
   margin: 0px auto;
   line-height: 2rem;
 	font-size: 1rem;
-	/* text-align: center; -- doesn't work for centering in div */
 }
 
 /* PRODUCT GALLERY */
