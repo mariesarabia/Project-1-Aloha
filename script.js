@@ -1,1 +1,5 @@
-console.log('hello');
+$('.carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
+});

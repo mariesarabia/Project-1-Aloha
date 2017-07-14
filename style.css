@@ -152,19 +152,19 @@ table {
 /* TEXT STYLES */
 
 body {
-  font-family: Raleway, Arial, sans-serif;
-  font-weight: 500;
+	font-family: Raleway, Arial, sans-serif;
+	font-weight: 500;
 	font-style: normal;
-  font-color: #2d2d2d;
+	color: #2d2d2d;
 }
 
 p {
-  font-size: 14px;
+	font-size: 14px;
 }
 
 .main-container {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 header {
@@ -197,7 +197,7 @@ header {
 }
 
 hr.rule {
-	border-top: 0.1px solid #969696;
+	border-top: 0.016rem solid #d7d7d7;
 	width: 100%;
 }
 
@@ -205,7 +205,7 @@ hr.rule {
 
 .navigation {
 	text-align: center;
-	font-size: 0.9em;
+	font-size: 0.9rem;
 	display: flex;
 	justify-content: space-between;
 	margin: 5px;
@@ -238,24 +238,25 @@ hr.rule {
 	justify-content: center;
 	flex-direction: column;
 	background:
+	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
 	url(images/banner-girl.png) no-repeat center,
 	url(images/flower-bkgd.jpg) center;
-	background-size: contain, cover;
+	background-size: cover, contain;
 }
 
 .hero-image h3 {
 	text-transform: uppercase;
 	color: white;
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	padding-bottom: 20px;
 	text-shadow: 1px 1px 2px #969696;
 }
 
 .hero-image h1 {
-	font-family: 'Playfair Display';
+	font-family: 'Playfair Display', Georgia, serif;
   	font-weight: normal;
 	font-style: normal;
-  	font-size: 2.2em;
+  	font-size: 2.2rem;
   	color: white;
 	text-shadow: 1px 1px 2px #969696;
 	padding: 0px 40px 0px 40px;
@@ -274,26 +275,26 @@ hr.rule {
 }
 
 .styles h1 {
-	font-size: 2.1em;
-	font-family: 'Playfair Display';
+	font-size: 2.1rem;
+	font-family: 'Playfair Display', Georgia, serif;
   	font-weight: normal;
 	font-style: italic;
 	padding-bottom: 20px;
 }
 
 .styles span {
-	font-family: 'Playfair Display', Arial, sans-serif;
+	font-family: 'Playfair Display', Georgia, serif;
   	font-weight: bold;
 	font-style: normal;
 }
 
 .styles p {
-	font-family: 'Raleway';
+	font-family: Raleway, Arial, sans-serif;
   font-weight: 300;
 	font-style: normal;
   margin: 0px auto;
-  line-height: 2em;
-	font-size: 1em;
+  line-height: 2rem;
+	font-size: 1rem;
 	/* text-align: center; -- doesn't work for centering in div */
 }
 
@@ -312,7 +313,7 @@ hr.rule {
 	align-items: center;
 justify-content: center;
 color: white;
-font-size: 1.4em;
+font-size: 1.4rem;
 text-shadow: 1px 1px 2px #969696;
 }
 
@@ -408,6 +409,7 @@ background-color: white;
 
 .carousel img {
 	width: 80%;
+	margin-bottom: 20px;
 }
 
 .most-loved li {
@@ -416,8 +418,8 @@ background-color: white;
 }
 
 .most-loved h1 {
-	font-size: 2.1em;
-	font-family: 'Playfair Display';
+	font-size: 2.1rem;
+	font-family: 'Playfair Display', Georgia, serif;
   	font-weight: normal;
 	color: #2d2d2d;
 	font-style: italic;
@@ -427,10 +429,10 @@ background-color: white;
 }
 
 .most-loved h2 {
-	font-family: 'Playfair Display';
+	font-family: 'Playfair Display', Georgia, serif;
 	font-weight: normal;
 	font-style: normal;
-	font-size: 1.3em;
+	font-size: 1.3rem;
 	color: #e2574c;
 	margin-top: 0px;
 	margin-bottom: 20px;
@@ -438,11 +440,11 @@ background-color: white;
 }
 
 .most-loved h3 {
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	font-weight: 300;
 	font-style: normal;
 	color: #969696;
-	font-size: 0.65em;
+	font-size: 0.65rem;
 	text-transform: uppercase;
 	margin-top: 0px;
 	margin-bottom: 20px;
@@ -450,13 +452,13 @@ background-color: white;
 }
 
 .most-loved p {
-	font-family: 'Raleway';
+	font-family: Raleway, Arial, sans-serif;
 	color: #969696;
 	text-align: center;
 }
 
 .most-loved span {
-	font-family: 'Playfair Display', Arial, sans-serif;
+	font-family: 'Playfair Display', Georgia, serif;
   	font-weight: bold;
 	font-style: normal;
 }
@@ -475,31 +477,33 @@ background-color: white;
 	padding-right: 5px;
 	text-shadow: 1px 1px 2px #969696;
 	margin-bottom: 8px;
+	margin-top: 50px;
+	box-sizing: border-box;
 }
 
 .updates h1 {
-	font-size: 2em;
+	font-size: 2rem;
 	font-family: 'Playfair Display', Georgia, serif;
   	font-weight: normal;
 	font-style: italic;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 	color: white;
 }
 
 .updates span {
-	font-family: 'Playfair Display', Arial, sans-serif;
+	font-family: 'Playfair Display', Georgia, serif;
   	font-weight: bold;
 	font-style: normal;
 }
 
 .updates p {
-	font-family: 'Raleway';
+	font-family: Raleway, Arial, sans-serif;
 	color: white;
-	font-size: 1em;
+	font-size: 1rem;
   	font-weight: 300;
 	font-style: normal;
   	margin: 0px auto;
-  	line-height: 2em;
+  	line-height: 2rem;
 }
 
 .subscription {
@@ -520,11 +524,11 @@ footer {
 	align-items: center;
 	text-align: center;
 	color: white;
-	font-size: 0.8em;
-	font-family: 'Playfair Display', Arial, sans-serif;
+	font-size: 0.8rem;
+	font-family: 'Playfair Display', Georgia, serif;
   	font-weight: normal;
 	font-style: normal;
-	line-height: 1.5em;
+	line-height: 1.5rem;
 }
 
 .footer div {
@@ -532,19 +536,19 @@ footer {
 }
 
 .powered-by {
-	margin-top: 0em;
-	margin-bottom: 1em;
+	margin-top: 0rem;
+	margin-bottom: 0.8rem;
 }
 
 .address {
 	color: #969696;
-	margin-top: 0em;
-	margin-bottom: 1em;
+	margin-top: 0rem;
+	margin-bottom: 0.8rem;
 }
 
 .contact {
-	margin-top: 0em;
-	margin-bottom: 1em;
+	margin-top: 0rem;
+	margin-bottom: 0.8rem;
 }
 
 .social-media a {
@@ -557,24 +561,51 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
-	padding: 0px 14px 0px 14px;
+	padding: 0px;
 }
 
-list-style: none;
-	display: inline;
-	text-transform: uppercase;
-	text-align: center;
-
-@media screen and (min-width: 600px) {
-	
-}
 
 @media screen and ( min-width: 600px ) {
   /* half-width cells for larger devices */
   .carousel-cell { width: 50%; }
+
+  
+
+
 }
 
 @media screen and ( min-width: 1240px ) {
   /* half-width cells for larger devices */
   .carousel-cell { width: 25%; }
+
+  header {
+	  display: flex;
+  }
+
+  .logo {
+	  order: 1;
+  }
+
+  .cart {
+	  order: 3;
+  }
+
+  .navigation {
+	  order: 2;
+  }
+
+ hr .rule {
+	 display: none;
+ }
+
+ .hero-image {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	background:
+	url(images/banner-girl.png) no-repea t center,
+	url(images/flower-bkgd.jpg) repeat-x center;
+	background-size: contain, cover;
+}
 }
