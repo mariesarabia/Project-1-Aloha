@@ -232,15 +232,15 @@ hr.rule {
 
 .hero-image {
 	width: 100%;
-height: 400px;
-display: flex;
-text-align: center;
-justify-content: center;
-flex-direction: column;
-background:
-url(images/banner-girl.png) no-repeat center,
-url(images/flower-bkgd.jpg) center;
-background-size: contain, cover;
+	height: 400px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	background:
+	url(images/banner-girl.png) no-repeat center,
+	url(images/flower-bkgd.jpg) center;
+	background-size: contain, cover;
 }
 
 .hero-image h3 {
@@ -253,10 +253,10 @@ background-size: contain, cover;
 
 .hero-image h1 {
 	font-family: 'Playfair Display';
-  font-weight: normal;
+  	font-weight: normal;
 	font-style: normal;
-  font-size: 2.2em;
-  color: white;
+  	font-size: 2.2em;
+  	color: white;
 	text-shadow: 1px 1px 2px #969696;
 	padding: 0px 40px 0px 40px;
 }
@@ -384,13 +384,30 @@ max-width: 50%;
 	background-size: cover;
 }
 
-
-
 MOST-LOVED PRODUCTS 
 
 .most-loved {
-height: 675px;
-padding-top: 60px;
+height: 680px;
+padding-top: 100px;
+background-color: white;
+}
+
+
+* { box-sizing: border-box; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 510px;
+  background-color: white;
+  counter-increment: gallery-cell;
+}
+
+.carousel img {
+	width: 80%;
 }
 
 .most-loved li {
@@ -399,14 +416,14 @@ padding-top: 60px;
 }
 
 .most-loved h1 {
-	font-size: 2em;
+	font-size: 2.1em;
 	font-family: 'Playfair Display';
   	font-weight: normal;
+	color: #2d2d2d;
 	font-style: italic;
-	padding-bottom: 20px;
 	text-align: center;
-	margin-top: 0px;
 	margin-bottom: 20px;
+	margin-top: 60px;
 }
 
 .most-loved h2 {
@@ -417,6 +434,7 @@ padding-top: 60px;
 	color: #e2574c;
 	margin-top: 0px;
 	margin-bottom: 20px;
+	text-align: center;
 }
 
 .most-loved h3 {
@@ -428,11 +446,13 @@ padding-top: 60px;
 	text-transform: uppercase;
 	margin-top: 0px;
 	margin-bottom: 20px;
+	text-align: center;
 }
 
 .most-loved p {
 	font-family: 'Raleway';
 	color: #969696;
+	text-align: center;
 }
 
 .most-loved span {
@@ -454,7 +474,7 @@ padding-top: 60px;
 	padding-left: 5px;
 	padding-right: 5px;
 	text-shadow: 1px 1px 2px #969696;
-	 margin-bottom: 8px;
+	margin-bottom: 8px;
 }
 
 .updates h1 {
@@ -468,7 +488,7 @@ padding-top: 60px;
 
 .updates span {
 	font-family: 'Playfair Display', Arial, sans-serif;
-  font-weight: bold;
+  	font-weight: bold;
 	font-style: normal;
 }
 
@@ -492,8 +512,8 @@ padding-top: 60px;
 
 footer {
 	width: 100%;
-  height: 300px;
-  background-color: #242424;
+  	height: 300px;
+  	background-color: #242424;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -502,7 +522,7 @@ footer {
 	color: white;
 	font-size: 0.8em;
 	font-family: 'Playfair Display', Arial, sans-serif;
-  font-weight: normal;
+  	font-weight: normal;
 	font-style: normal;
 	line-height: 1.5em;
 }
@@ -535,10 +555,26 @@ footer {
 	width: 100%;
 	list-style: none;
 	display: flex;
-	justify-content: space-around;
-	padding: 0px 30px;
+	justify-content: space-between;
+	text-align: center;
+	padding: 0px 14px 0px 14px;
 }
+
+list-style: none;
+	display: inline;
+	text-transform: uppercase;
+	text-align: center;
 
 @media screen and (min-width: 600px) {
 	
+}
+
+@media screen and ( min-width: 600px ) {
+  /* half-width cells for larger devices */
+  .carousel-cell { width: 50%; }
+}
+
+@media screen and ( min-width: 1240px ) {
+  /* half-width cells for larger devices */
+  .carousel-cell { width: 25%; }
 }

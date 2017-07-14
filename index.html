@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://use.fontawesome.com/3f0ab2de8b.js"></script>
     <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   </head>
   <body>
     <div class="main-container">
@@ -46,56 +47,55 @@
       </section>
       <section class="most-loved">
         <h1>Most-Loved <span>Products</span></h1>
-        <ul>
-          <li>
-            <img src="images/stretch-knit-dress.jpg" alt="checked stretch dress">
+
+        <!-- Carousel -->
+
+         <!-- Flickity HTML init -->
+        <div class="carousel" data-flickity='{ "autoPlay": true, "prevNextButtons": false}'>
+          <div class="carousel-cell"><img src="images/stretch-knit-dress.jpg" alt="checked stretch dress">
             <h3>Dresses</h3>
             <h2>Stretch Knit Dress</h2>
             <p>$169.00</p>
-          </li>
-          <li>
-            <img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
+            </div>
+          <div class="carousel-cell"><img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
             <h3>Shirts</h3>
             <h2>Cotton Blue Shirts</h2>
             <p>$89.00</p>
-          </li>
-          <li>
+            </div>
+          <div class="carousel-cell">
             <img src="images/checked-stretch-dress.jpg" alt="cotton blue shirt">
             <h3>Dresses</h3>
             <h2>Checked Stretch Dress</h2>
             <p>$129.00</p>
-          </li>
-          <li>
-            <img src="images/blue-hipster-backpack.jpg" alt="cotton blue shirt">
+          </div>
+          <div class="carousel-cell"><img src="images/blue-hipster-backpack.jpg" alt="cotton blue shirt">
             <h3>Bags</h3>
             <h2>Blue Hipster Backpack</h2>
             <p>$69.00</p>
-          </li>
-          <li>
+            </div>
+          <div class="carousel-cell">
             <img src="images/demin-overall-shorts.jpg" alt="denim overall shorts">
             <h3>Denim</h3>
             <h2>Denim Overall Shorts</h2>
             <p>$89.00</p>
-          </li>
-          <li>
+          </div>
+          <div class="carousel-cell">
             <img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">
             <h3>Dresses</h3>
             <h2>Pink Dotted Dress</h2>
             <p>$99.00</p>
-          </li>
-          <li>
-          <li>
-            <img src="images/blue-silk-dress.jpg" alt="blue silk dress">
+          </div>
+          <div class="carousel-cell"><img src="images/blue-silk-dress.jpg" alt="blue silk dress">
             <h3>Dresses</h3>
             <h2>Blue Silk Dress</h2>
             <p>$99.00</p>
-          </li>
-          <li>
-            <img src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow tshirt">
+            </div>
+          <div class="carousel-cell"><img src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow tshirt">
             <h3>Shirts</h3>
             <h2>Cotton Yellow Shirt</h2>
             <p>$39.00</p>
-          </li>
+            </div>
+      </div>
       </section>
       <section class="updates">
         <h1>Sign-up for <span>Updates</span></h1>
@@ -129,5 +129,6 @@
   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
   crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
   </html>
