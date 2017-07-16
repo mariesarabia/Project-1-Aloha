@@ -4,7 +4,7 @@ $('.carousel').flickity({
   //cellAlign: 'center',
  // contain: true,
   autoPlay: true,
-  prevNextButtons: false
+  prevNextButtons: false,
 });
 
 });

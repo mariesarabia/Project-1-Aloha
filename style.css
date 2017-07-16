@@ -410,16 +410,16 @@ background-color: white;
 .carousel {
   background-color: white;
 }
-
 .carousel-cell {
-  /*width: 100%;
-  height: 510px;*/
+  height: 510px;
   counter-increment: gallery-cell;
+  padding-top: 10px;
 }
 
 .carousel img {
 	/*width: 80%;
 	margin-bottom: 20px;*/
+	
 }
 
 .most-loved li {
@@ -577,16 +577,39 @@ footer {
 }
 
 
-@media screen and ( min-width: 600px ) {
+@media screen and (min-width: 600px) {
   /* half-width cells for larger devices */
-  .carousel-cell { width: 50%; }
+  .carousel-cell { 
+	  width: 50%;
+ }
 
-  
+  .logo {
+	  order: 1;
+  }
 
+  .cart {
+	  order: 3;
+  }
+
+  .navigation {
+	  order: 2;
+  }
+
+ hr.rule {
+	  display: hidden;
+ }
+
+.hero-image {
+	background:
+	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+	url(images/banner-girl.png) no-repeat center,
+	url(images/flower-bkgd.jpg) repeat-x center;
+	background-size: cover, contain;
+ }
 
 }
 
-@media screen and ( min-width: 1240px ) {
+@media screen and (min-width: 1240px) {
   /* half-width cells for larger devices */
   .carousel-cell { width: 25%; }
 
@@ -606,18 +629,60 @@ footer {
 	  order: 2;
   }
 
- hr .rule {
+ hr.rule {
 	 display: none;
  }
 
  .hero-image {
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	flex-direction: column;
+	height: 550px;
 	background:
-	url(images/banner-girl.png) no-repea t center,
+	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+	url(images/banner-girl.png) no-repeat center,
 	url(images/flower-bkgd.jpg) repeat-x center;
-	background-size: contain, cover;
+	background-size: contain;
+ }
+
+ .hero-image h3 {
+	text-transform: uppercase;
+	color: white;
+	font-size: 1.2rem;
+	padding-bottom: 20px;
+	text-shadow: 1px 1px 2px #969696;
 }
+
+.hero-image h1 {
+	font-family: 'Playfair Display', Georgia, serif;
+  	font-weight: normal;
+	font-style: normal;
+  	font-size: 4rem;
+  	color: white;
+	text-shadow: 1px 1px 2px #969696;
+	padding: 0px 40px 0px 40px;
+}
+
+.styles {
+	padding: 0px 430px;
+}
+
+.styles {
+	line-height: 2rem;
+	font-size: 4rem;
+}
+
+.products {
+	width: 100%;
+	height: 645;
+}
+
+.mens, .womens {
+	flex: 1 0 50%;
+	height: 365px;
+}
+
+.trends, .glasses, .sale, .bags {
+	flex: 1 0 25%;
+	height: 365px;
+}
+
+
 }
