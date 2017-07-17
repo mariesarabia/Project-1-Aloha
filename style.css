@@ -174,6 +174,7 @@ header {
 	justify-content: space-around;
 	box-sizing: border-box;
 	padding: 12px;
+
 }
 
 .logo {
@@ -407,20 +408,21 @@ background-color: white;
 
 * { box-sizing: border-box; }
 
+.carousel container {
+	  overflow: hidden;
+}
+
 .carousel {
   background-color: white;
 }
+
 .carousel-cell {
   height: 510px;
   counter-increment: gallery-cell;
   padding-top: 10px;
+
 }
 
-.carousel img {
-	/*width: 80%;
-	margin-bottom: 20px;*/
-	
-}
 
 .most-loved li {
 	display: inline;
@@ -543,7 +545,7 @@ footer {
 	line-height: 1.5rem;
 }
 
-.footer div {
+.footer-text {
 	width: 100%;
 }
 
@@ -565,82 +567,79 @@ footer {
 
 .social-media a {
 	color: white;
+	text-decoration: none;
 }
 
 .social-media {
 	width: 100%;
 	list-style: none;
 	display: flex;
-	justify-content: space-between;
-	text-align: center;
-	padding: 0px;
+	flex-direction: row;
+	justify-content: center;
 }
 
+.social-media li {
+	width: 20px;
+	font-family: Raleway, Arial, sans-serif;
+	font-size: 1rem;
+  	font-weight: 300;
+	font-style: normal;
+}
 
-@media screen and (min-width: 600px) {
-  /* half-width cells for larger devices */
-  .carousel-cell { 
-	  width: 50%;
- }
-
-  .logo {
-	  order: 1;
-  }
-
-  .cart {
-	  order: 3;
-  }
-
-  .navigation {
-	  order: 2;
-  }
-
- hr.rule {
-	  display: hidden;
- }
-
-.hero-image {
-	background:
-	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-	url(images/banner-girl.png) no-repeat center,
-	url(images/flower-bkgd.jpg) repeat-x center;
-	background-size: cover, contain;
- }
-
+.social-media-name {
+	font-size: 0;
 }
 
 @media screen and (min-width: 1240px) {
-  /* half-width cells for larger devices */
-  .carousel-cell { width: 25%; }
 
-  header {
-	  display: flex;
-  }
+/* HEADER  */
 
-  .logo {
-	  order: 1;
-  }
+header {
+	width: 1240px;
+	height: 98px;
+	margin: 0px auto;
+	flex-wrap: none;
+}
 
-  .cart {
-	  order: 3;
-  }
+hr.rule {
+	display: none;
+}
 
-  .navigation {
-	  order: 2;
-  }
+.logo {
+	order: 1;
+	width: 240px;
+}
 
- hr.rule {
-	 display: none;
- }
+.logo img {
+	width: 162px;
+}
 
- .hero-image {
+.cart {
+	order: 3;
+	width: 240px;
+}
+
+.cart img {
+	width: 64px;
+	height: 64px;
+}
+
+.navigation {
+	order: 2;
+	width: 710px;
+	font-size: 1rem;
+}
+
+/* HERO IMAGE */
+
+.hero-image {
 	height: 550px;
 	background:
 	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
 	url(images/banner-girl.png) no-repeat center,
 	url(images/flower-bkgd.jpg) repeat-x center;
 	background-size: contain;
- }
+}
 
  .hero-image h3 {
 	text-transform: uppercase;
@@ -660,14 +659,17 @@ footer {
 	padding: 0px 40px 0px 40px;
 }
 
+/* STYLES */
+
 .styles {
 	padding: 0px 430px;
 }
 
-.styles {
-	line-height: 2rem;
-	font-size: 4rem;
+.styles p {
+	font-size: 1.1rem;
 }
+
+/* PRODUCTS */
 
 .products {
 	width: 100%;
@@ -675,8 +677,8 @@ footer {
 }
 
 .mens, .womens {
-	flex: 1 0 50%;
 	height: 365px;
+	flex: 2 0 50%;
 }
 
 .trends, .glasses, .sale, .bags {
@@ -684,5 +686,20 @@ footer {
 	height: 365px;
 }
 
+/* UPDATES */
+
+.updates {
+	padding: 0px 430px;
+}
+
+.updates p {
+	font-size: 1.1rem;
+}
+
+/* FOOTER */
+
+.footer-text {
+	width: 710px;
+}
 
 }
