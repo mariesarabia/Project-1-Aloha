@@ -31,7 +31,6 @@ $('.carousel').flickity({
 	    } // End if
 	  });
 
-
 	$("a").on('click', function(event) {
 
 	});

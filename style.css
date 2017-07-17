@@ -240,9 +240,9 @@ hr.rule {
 	flex-direction: column;
 	background:
 	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-	url(images/banner-girl.png) no-repeat center,
+	url(images/banner-girl.png) no-repeat bottom center,
 	url(images/flower-bkgd.jpg) center;
-	background-size: cover, contain;
+	background-size: cover, auto 86%;
 }
 
 .hero-image h3 {
@@ -662,11 +662,16 @@ hr.rule {
 /* STYLES */
 
 .styles {
+	width: 100%;
 	padding: 0px 430px;
 }
 
 .styles p {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
+}
+
+.styles h1 {
+	font-size: 2.3rem;
 }
 
 /* PRODUCTS */
