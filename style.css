@@ -330,7 +330,6 @@ text-shadow: 1px 1px 2px #969696;
 
 .mens, .womens {
 	max-width: 100%;
-	height: 200px;
 	flex: 1 0 100%;
 	margin: auto;
 	border: 4px solid white;
@@ -354,8 +353,7 @@ text-shadow: 1px 1px 2px #969696;
 }
 
 .trends, .sale {
-max-width: 50%;
-	height: 210px;
+	max-width: 50%;
 	flex: 1 0 100%;
 	margin: auto;
 	border: 4px solid white;
@@ -373,7 +371,6 @@ max-width: 50%;
 
 .glasses, .bags {
 	max-width: 50%;
-	height: 200px;
 	flex: 1 0 100%;
 	margin: auto;
 	border: 4px solid white;
@@ -423,10 +420,11 @@ background-color: white;
 }
 
 .carousel-cell {
+	width: 100%;
   height: 510px;
   counter-increment: gallery-cell;
-  padding-top: 10px;
-
+  padding-top: 40px;
+  text-align: center;
 }
 
 
@@ -526,12 +524,37 @@ background-color: white;
   	line-height: 2rem;
 }
 
-.subscription {
-	color: white;
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
+.subscribe-form {
+	background-color: white;
+	width: 350px;
+	padding: 2px;
+	margin: 0 auto;
 	box-sizing: border-box;
+	border-radius: 50px;
+}
+
+.subscribe-input {
+	width: 1px;
+}
+
+.subscribe-submit {
+	background-color: #e2574c;
+	width: 125px;
+	border-radius: 20px;
+	font-family: Raleway, Arial, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 0.9rem;
+	color: white;
+	height: 35px;
+  /* position: absolute;
+  top: 15px;
+  right: 15px;
+  padding-left: 15px;
+  height: 35px;
+  width: 60px;
+  background: #60e160;
+  border: 1px solid; */
 }
 
 footer {
@@ -596,12 +619,46 @@ footer {
 	font-size: 0;
 }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
 
-	hr.rule {
+header {
+	height: 98px;
+	margin: 0px auto;
+	flex-wrap: none;
+}
+
+hr.rule {
 	display: none;
 }
+
+.logo {
+	order: 1;
+	width: 240px;
 }
+
+.logo img {
+	width: 162px;
+}
+
+.cart {
+	order: 3;
+	width: 240px;
+}
+
+.cart img {
+	width: 64px;
+	height: 64px;
+}
+
+.navigation {
+	order: 2;
+	width: 600px;
+	font-size: 1rem;
+	justify-content: center;
+	margin: 10px;
+}
+
+} */
 
 @media screen and (min-width: 1240px) {
 
@@ -609,7 +666,7 @@ footer {
 
 header {
 	/* width: 100%; -- add this? or 1240px? */
-	height: 98px;
+	height: 90px;
 	margin: 0px auto;
 	flex-wrap: none;
 }
@@ -641,6 +698,8 @@ hr.rule {
 	order: 2;
 	width: 710px;
 	font-size: 1rem;
+	justify-content: center;
+	margin: 10px;
 }
 
 /* HERO IMAGE */
@@ -710,10 +769,19 @@ hr.rule {
 	font-size: 2.3rem;
 }
 
+
+.carousel-cell {
+	width: 25%;
+  height: 510px;
+  counter-increment: gallery-cell;
+  padding-top: 40px;
+  text-align: center;
+}
+
 /* UPDATES */
 
 .updates {
-	padding: 0px 430px;
+	padding: 0px 380px;
 }
 
 .updates h1 {
@@ -724,11 +792,18 @@ hr.rule {
 	font-size: 1.1rem;
 }
 
+.subscription {
+	width: 445px;
+	display: flex:
+}
+
 
 /* FOOTER */
 
-.footer-text {
+/* .footer-text {
 	width: 710px;
+	justify-content: space-around;
+	flex-direction: row;
 }
 
 .social-media li {
@@ -737,6 +812,9 @@ hr.rule {
 
 .social-media-name {
 	font-size: 1rem;
-}
+} */
+
+
+
 
 }

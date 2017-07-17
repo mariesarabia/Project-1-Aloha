@@ -2,8 +2,8 @@ $( document ).ready(function() {
 // $(function() {
 $('.carousel').flickity({
   // options
-  //cellAlign: 'center',
- // contain: true,
+  cellAlign: 'left',
+ contain: true,
   autoPlay: true,
   prevNextButtons: false,
 });
