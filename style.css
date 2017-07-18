@@ -649,33 +649,37 @@ text-decoration: underline;
 	padding-top: 85px;
 }
 
+header {
+	height: 90px;
+	flex-wrap: none;
+}
+
 hr.rule {
 	display: none;
 }
 
 .logo {
 	order: 1;
-	width: 100px;
+	width: 120px;
 }
 
 .logo img {
-	width: 162px;
+	width: 120px;
 }
 
 .cart {
 	order: 3;
-	width: 100px;
+	width: 120px;
 }
 
 .cart img {
-	width: 64px;
-	height: 64px;
+	width: 50px;
+	height: 50px;
 }
 
 .navigation {
 	order: 2;
-	width: 400px;
-	font-size: 1rem;
+	width: 350px;
 	justify-content: center;
 	margin: 10px;
 }
@@ -753,7 +757,6 @@ header {
 padding-top: 90px;
 }
 
-
 hr.rule {
 	display: none;
 }
@@ -828,9 +831,6 @@ hr.rule {
 .styles h1 {
 	font-size: 2.3rem;
 }
-
-/* PRODUCTS DESKTOP */
-
 
 
 /* MOST-LOVED PRODUCTS DESKTOP */
