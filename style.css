@@ -149,7 +149,7 @@ table {
 
 */
 
-/* TEXT STYLES */
+/* MOBILE: TEXT STYLES */
 
 body {
 	font-family: Raleway, Arial, sans-serif;
@@ -208,7 +208,7 @@ hr.rule {
 	width: 100%;
 }
 
-/* NAVIGATION BAR */
+/* MOBILE: NAVIGATION BAR */
 
 .navigation {
 	/* text-align: center; */
@@ -235,7 +235,7 @@ hr.rule {
 	color: #b64036
 }
 
-/* HERO-IMAGE */
+/* MOBILE: HERO-IMAGE */
 
 .hero-image {
 	width: 100%;
@@ -269,7 +269,7 @@ hr.rule {
 	padding: 0px 40px 0px 40px;
 }
 
-/* HAND-CRAFTED STYLES */
+/* MOBILE: HAND-CRAFTED STYLES */
 
 .styles {
 	height: 260px;
@@ -304,7 +304,7 @@ hr.rule {
 	font-size: 1rem;
 }
 
-/* PRODUCT GALLERY */
+/* MOBILE: PRODUCT GALLERY */
 
 .categories {
 	max-width: 100%;
@@ -414,7 +414,7 @@ hr.rule {
 	position: relative;
 }
 
-MOST-LOVED PRODUCTS 
+/* MOBILE: MOST-LOVED PRODUCTS  */
 
 .most-loved {
 height: 680px;
@@ -496,7 +496,7 @@ background-color: white;
 	padding-bottom: 40px;
 }
 
-/* SIGN-UP FOR UPDATES */
+/* MOBILE: SIGN-UP FOR UPDATES */
 
 .updates {
 	display: flex;
@@ -574,7 +574,7 @@ background-color: white;
 	right: 1.5rem;
 }
 
-/* FOOTER */
+/* MOBILE: FOOTER */
 
 footer {
 	width: 100%;
@@ -645,7 +645,7 @@ text-decoration: underline;
 	font-size: 0px;
 }
 
-
+/* TABLET  */
 
  @media screen and (min-width: 600px) {
 
@@ -683,9 +683,10 @@ hr.rule {
 
 .navigation {
 	order: 2;
-	width: 350px;
+	width: 400px;
 	justify-content: center;
 	margin: 10px;
+	padding: 0;
 }
 
 /* TABLET: PRODUCT GALLERY */
@@ -775,8 +776,23 @@ hr.rule {
 
 /* TABLET FOOTER */
 
-.social-media {
+ footer {
+	padding: 0px 20px;
+} 
+
+.info {
+	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.social-media-name {
+	font-size: 1rem;
+}
+
+.channels {
+	display: block;
+	line-height: 2rem;
 }
 
 } 
