@@ -684,6 +684,8 @@ hr.rule {
 	margin: 10px;
 }
 
+/* TABLET: PRODUCT GALLERY */
+
 .categories {
 	height: 100%;
 }
@@ -729,15 +731,46 @@ hr.rule {
 	border-left: 4px white solid;
 }
 
+/* TABLET: CAROUSEL */
 
 .carousel-cell {
 	width: 50%;
-  height: 510px;
   counter-increment: gallery-cell;
   padding-top: 40px;
   text-align: center;
 }
 
+.flickity-page-dots {
+	padding-bottom: 40px;
+}
+
+/* TABLET: UPDATES   */
+
+.updates h1 {
+	font-size: 2.3rem;
+}
+
+.updates p {
+	font-size: 1.2rem;
+}
+
+.subscription {
+	width: 445px;
+	display: flex:
+}
+
+.subscribe-input {
+	width: 445px;
+	height: 50px;
+}
+
+.subscribe-submit {
+	width: 125px;
+	border-radius: 50px;
+	height: 45px;
+	font-size: 1rem;
+	right: 7.4rem;
+}
 
 } 
 
@@ -745,7 +778,7 @@ hr.rule {
 
 @media screen and (min-width: 1240px) {
 
-/* HEADER DESKTOP */
+/* DESKTOP: HEADER */
 
 header {
 	height: 90px;
@@ -788,7 +821,7 @@ hr.rule {
 	margin: 10px;
 }
 
-/* HERO IMAGE DESKTOP */
+/* DESKTOP: HERO IMAGE */
 
 .hero-image {
 	height: 550px;
@@ -817,7 +850,7 @@ hr.rule {
 	padding: 0px 40px 0px 40px;
 }
 
-/* STYLES DESKTOP */
+/* DESKTOP: STYLES */
 
 .styles {
 	width: 100%;
@@ -833,7 +866,7 @@ hr.rule {
 }
 
 
-/* MOST-LOVED PRODUCTS DESKTOP */
+/* DESKTOP: MOST-LOVED */
 
 .carousel-cell {
 	width: 25%;
@@ -843,7 +876,7 @@ hr.rule {
   text-align: center;
 }
 
-/* UPDATES DESKTOP */
+/* DESKTOP: UPDATES */
 
 .updates {
 	padding: 0px 380px;
@@ -863,35 +896,20 @@ hr.rule {
 }
 
 .subscribe-input {
-	font-family: Raleway, Arial, sans-serif;
-	font-weight: 300;
-	font-style: normal;
-	font-size: 0.9rem;
-	background-color: white;
 	width: 445px;
 	height: 50px;
-	border-radius: 50px;
-	border: none;
-	box-sizing: border-box;
-	padding-left: 1.5rem;
 }
 
 .subscribe-submit {
 	width: 125px;
 	border-radius: 50px;
-	font-family: Raleway, Arial, sans-serif;
-	font-weight: 500;
-	font-style: normal;
 	font-size: 1rem;
 	color: white;
 	height: 45px;
-	border: none; 
-	position: absolute;
-	top: 0.2rem;
 	right: 7.5rem;
 }
 
-/* FOOTER DESKTOP */
+/* DESKTOP: FOOTER */
 
 
 }

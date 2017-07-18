@@ -45,9 +45,11 @@ Incorporating smooth scrolling using JS
 
 The use of an image carousel using a jQuery plugin 
 
-Cross-browser testing (Chrome, Firefox, Safari, Opera, IE11)
+Cross-browser testing Chrome, Firefox, Safari (flexbox gallery not working properly on Firefox and Safari)
 
 Incorporating a fixed header / navigation menu 
+
+
 
 
 
