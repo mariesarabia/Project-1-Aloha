@@ -2,12 +2,12 @@
 
 Aloha Apparel Co. e-commerce website that utilizes html, css and jquery. 
 
-Technologies Used: 
+TECHNOLOGIES USED:
 
 HTML
 CSS 
-JAVASCRIPT
-JQUERY 
+Javascript
+JQuery
 
 LEARNINGS: 
 
@@ -35,7 +35,7 @@ The use of rem and em in sizing
 
 Using the background property to create a hero image with 3 layers and for use in image gallery 
 
-use of custom fonts using @font-face 
+Use of custom fonts using @font-face 
 
 Use of icon-font 
 
