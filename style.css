@@ -766,6 +766,8 @@ hr.rule {
 	height: 50px;
 }
 
+/* need to fix subscribe button is shifting: */
+
 .subscribe-submit {
 	width: 125px;
 	border-radius: 50px;
@@ -786,6 +788,13 @@ hr.rule {
 	align-items: center;
 }
 
+/* need to fix: social media
+channels are being truncated on the right: */
+
+.contact {
+	text-align: left;
+}
+
 .social-media-name {
 	font-size: 1rem;
 }
@@ -793,6 +802,7 @@ hr.rule {
 .channels {
 	display: block;
 	line-height: 2rem;
+	text-align: left;
 }
 
 } 
