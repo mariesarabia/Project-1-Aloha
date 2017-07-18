@@ -492,6 +492,10 @@ background-color: white;
 	font-style: normal;
 }
 
+.flickity-page-dots {
+	padding-bottom: 40px;
+}
+
 /* SIGN-UP FOR UPDATES */
 
 .updates {
@@ -567,7 +571,7 @@ background-color: white;
 	border: none; 
 	position: absolute;
 	top: 0.2rem;
-	right: 3.5rem;
+	right: 1.5rem;
 }
 
 /* FOOTER */
@@ -740,9 +744,6 @@ hr.rule {
   text-align: center;
 }
 
-.flickity-page-dots {
-	padding-bottom: 40px;
-}
 
 /* TABLET: UPDATES   */
 
@@ -770,6 +771,12 @@ hr.rule {
 	height: 45px;
 	font-size: 1rem;
 	right: 7.4rem;
+}
+
+/* TABLET FOOTER */
+
+.social-media {
+	justify-content: space-between;
 }
 
 } 
