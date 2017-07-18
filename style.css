@@ -306,14 +306,14 @@ hr.rule {
 
 /* PRODUCT GALLERY */
 
-.products {
+.categories {
 	max-width: 100%;
 	height: auto;
 	display: flex;
 	flex-flow: row wrap;
 }
 
-.products a {
+.categories a {
 	font-family: Raleway, Arial, sans-serif;
 	font-weight: 500;
 	font-style: normal;
@@ -643,12 +643,10 @@ text-decoration: underline;
 
 
 
-/* @media screen and (min-width: 600px) {
+ @media screen and (min-width: 600px) {
 
-header {
-	height: 98px;
-	margin: 0px auto;
-	flex-wrap: none;
+.content {
+	padding-top: 85px;
 }
 
 hr.rule {
@@ -657,7 +655,7 @@ hr.rule {
 
 .logo {
 	order: 1;
-	width: 240px;
+	width: 100px;
 }
 
 .logo img {
@@ -666,7 +664,7 @@ hr.rule {
 
 .cart {
 	order: 3;
-	width: 240px;
+	width: 100px;
 }
 
 .cart img {
@@ -676,13 +674,68 @@ hr.rule {
 
 .navigation {
 	order: 2;
-	width: 600px;
+	width: 400px;
 	font-size: 1rem;
 	justify-content: center;
 	margin: 10px;
 }
 
-} */
+.categories {
+	height: 100%;
+}
+
+.products {
+	width: 100%;
+	height: auto;
+}
+
+.mens {
+	width: 50%;
+	padding-bottom: 25%;
+	border-right: 4px white solid;
+}
+
+.trends {
+	max-width: 25%;
+	padding-bottom: 25%;
+	border-left: 4px white solid;
+}
+
+.glasses {
+	max-width: 25%;
+	padding-bottom: 25%;
+	border-right: 0px;
+}
+
+.sale {
+	max-width: 25%;
+	padding-bottom: 25%;
+	border-left: 0px;
+}
+
+.bags {
+	max-width: 25%;
+	padding-bottom: 25%;
+	border-right: 4px white solid;
+}
+
+.womens {
+	max-width: 50%;
+	padding-bottom: 25%;
+	border-left: 4px white solid;
+}
+
+
+.carousel-cell {
+	width: 50%;
+  height: 510px;
+  counter-increment: gallery-cell;
+  padding-top: 40px;
+  text-align: center;
+}
+
+
+} 
 
 /* DESKTOP */
 
@@ -778,27 +831,12 @@ hr.rule {
 
 /* PRODUCTS DESKTOP */
 
-.products {
-	width: 100%;
-	height: auto;
-}
 
-.mens, .womens {
-	width: 50%;
-	padding-bottom: 0;
-	flex-grow: 2 0 50%;
-	border-left: 0px;
-}
-
-.trends, .glasses, .sale, .bags {
-	max-width: 25%;
-	flex: 1 0 50%;
-}
 
 /* MOST-LOVED PRODUCTS DESKTOP */
 
 .carousel-cell {
-width: 25%;
+	width: 25%;
   height: 510px;
   counter-increment: gallery-cell;
   padding-top: 40px;
