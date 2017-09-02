@@ -8,6 +8,13 @@ $('.carousel').flickity({
   prevNextButtons: false,
 });
 
+// Skip Link Bug Fix
+$(function() {
+   $("a[href^='#']").not("a[href='#']").click(function() {
+      $("#"+$(this).attr("href").slice(1)+"").focus();
+   });
+});
+
 // Add smooth scrolling to all links
 	  $("a").on('click', function(event) {
 

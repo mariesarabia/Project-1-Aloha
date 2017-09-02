@@ -3,140 +3,206 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 
 /* @font-face code */
 
 @font-face {
-	font-family: 'Raleway';
-	src: url('fonts/Raleway-LightItalic.eot');
-	src: url('fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
-		url('fonts/Raleway-LightItalic.woff') format('woff'),
-		url('fonts/Raleway-LightItalic.ttf') format('truetype'),
-		url('fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
-	font-weight: 300;
-	font-style: italic;
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-LightItalic.eot');
+    src: url('fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'), url('fonts/Raleway-LightItalic.woff') format('woff'), url('fonts/Raleway-LightItalic.ttf') format('truetype'), url('fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
 }
 
 @font-face {
-	font-family: 'Raleway';
-	src: url('fonts/Raleway-Medium.eot');
-	src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
-		url('fonts/Raleway-Medium.woff') format('woff'),
-		url('fonts/Raleway-Medium.ttf') format('truetype'),
-		url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
-	font-weight: 500;
-	font-style: normal;
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Medium.eot');
+    src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/Raleway-Medium.woff') format('woff'), url('fonts/Raleway-Medium.ttf') format('truetype'), url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Raleway';
-	src: url('fonts/Raleway-MediumItalic.eot');
-	src: url('fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
-		url('fonts/Raleway-MediumItalic.woff') format('woff'),
-		url('fonts/Raleway-MediumItalic.ttf') format('truetype'),
-		url('fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
-	font-weight: 500;
-	font-style: italic;
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-MediumItalic.eot');
+    src: url('fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'), url('fonts/Raleway-MediumItalic.woff') format('woff'), url('fonts/Raleway-MediumItalic.ttf') format('truetype'), url('fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
 }
 
 @font-face {
-	font-family: 'Raleway';
-	src: url('fonts/Raleway-Light.eot');
-	src: url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
-		url('fonts/Raleway-Light.woff') format('woff'),
-		url('fonts/Raleway-Light.ttf') format('truetype'),
-		url('fonts/Raleway-Light.svg#Raleway-Light') format('svg');
-	font-weight: 300;
-	font-style: normal;
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Light.eot');
+    src: url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'), url('fonts/Raleway-Light.woff') format('woff'), url('fonts/Raleway-Light.ttf') format('truetype'), url('fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Playfair Display';
-	src: url('fonts/PlayfairDisplay-Regular.eot');
-	src: url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-		url('fonts/PlayfairDisplay-Regular.woff') format('woff'),
-		url('fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
-		url('fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Regular.eot');
+    src: url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/PlayfairDisplay-Regular.woff') format('woff'), url('fonts/PlayfairDisplay-Regular.ttf') format('truetype'), url('fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Playfair Display';
-	src: url('fonts/PlayfairDisplay-Bold.eot');
-	src: url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
-		url('fonts/PlayfairDisplay-Bold.woff') format('woff'),
-		url('fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
-		url('fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
-	font-weight: bold;
-	font-style: normal;
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Bold.eot');
+    src: url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/PlayfairDisplay-Bold.woff') format('woff'), url('fonts/PlayfairDisplay-Bold.ttf') format('truetype'), url('fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Playfair Display';
-	src: url('fonts/PlayfairDisplay-BoldItalic.eot');
-	src: url('fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
-		url('fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
-		url('fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
-		url('fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
-	font-weight: bold;
-	font-style: italic;
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-BoldItalic.eot');
+    src: url('fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'), url('fonts/PlayfairDisplay-BoldItalic.woff') format('woff'), url('fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'), url('fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
 }
 
 @font-face {
-	font-family: 'Playfair Display';
-	src: url('fonts/PlayfairDisplay-Italic.eot');
-	src: url('fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
-		url('fonts/PlayfairDisplay-Italic.woff') format('woff'),
-		url('fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
-		url('fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
-	font-weight: normal;
-	font-style: italic;
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Italic.eot');
+    src: url('fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'), url('fonts/PlayfairDisplay-Italic.woff') format('woff'), url('fonts/PlayfairDisplay-Italic.ttf') format('truetype'), url('fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
 }
+
 
 /* COLOURS 
 
@@ -149,800 +215,757 @@ table {
 
 */
 
+
 /* MOBILE: TEXT STYLES */
 
 body {
-	font-family: Raleway, Arial, sans-serif;
-	font-weight: 500;
-	font-style: normal;
-	color: #2d2d2d;
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #2d2d2d;
 }
 
 p {
-	font-size: 14px;
+    font-size: 14px;
 }
 
 .main-container {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 }
 
 header {
-	 width: 100%; 
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	box-sizing: border-box;
-	padding: 12px;
-	position: fixed;
-	background-color: white;
-	z-index: 99999;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 12px;
+    position: fixed;
+    background-color: white;
+    z-index: 99999;
 }
 
+
 /* Padding added for fixed header style */
+
 .content {
-padding-top: 116px;
+    padding-top: 116px;
 }
 
 .logo {
-	width: 50%;
+    width: 50%;
 }
 
 .logo img {
-	width: 120px;
+    width: 120px;
 }
 
 .cart {
-	width: 50%;
-	display: flex;
-	justify-content: flex-end;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .cart img {
-	width: 50px;
-	height: 50px;
+    width: 50px;
+    height: 50px;
 }
 
 hr.rule {
-	border: 0.016rem solid #d7d7d7;
-	width: 100%;
+    border: 0.016rem solid #d7d7d7;
+    width: 100%;
 }
+
 
 /* MOBILE: NAVIGATION BAR */
 
 .navigation {
-	/* text-align: center; */
-	font-size: 0.9rem;
-	display: flex;
-	justify-content: space-between;
-	margin: 5px;
+    /* text-align: center; */
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
 }
 
 .navigation li {
-	list-style: none;
-	display: inline;
-	text-transform: uppercase;
-	padding: 0px 14px 0px 14px;
-	/* text-align: center; */
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    padding: 0px 14px 0px 14px;
+    /* text-align: center; */
 }
 
 .navigation a {
-	text-decoration: none;
-	color: #e2574c;
+    text-decoration: none;
+    color: #e2574c;
 }
 
 .navigation a:hover {
-	color: #b64036
+    color: #b64036
 }
+
 
 /* MOBILE: HERO-IMAGE */
 
 .hero-image {
-	width: 100%;
-	height: 400px;
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	flex-direction: column;
-	background:
-	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-	url(images/banner-girl.png) no-repeat bottom center,
-	url(images/flower-bkgd.jpg) center;
-	background-size: cover, auto 86%;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/banner-girl.png) no-repeat bottom center, url(images/flower-bkgd.jpg) center;
+    background-size: cover, auto 86%;
 }
 
 .hero-image h3 {
-	text-transform: uppercase;
-	color: white;
-	font-size: 1.2rem;
-	padding-bottom: 20px;
-	text-shadow: 1px 1px 2px #969696;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 2px #969696;
 }
 
 .hero-image h1 {
-	font-family: 'Playfair Display', Georgia, serif;
-  	font-weight: normal;
-	font-style: normal;
-  	font-size: 2.2rem;
-  	color: white;
-	text-shadow: 1px 1px 2px #969696;
-	padding: 0px 40px 0px 40px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.2rem;
+    color: white;
+    text-shadow: 1px 1px 2px #969696;
+    padding: 0px 40px 0px 40px;
 }
+
 
 /* MOBILE: HAND-CRAFTED STYLES */
 
 .styles {
-	height: 260px;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	text-align: center;
-	padding: 0px 20px 0px 20px;
+    height: 260px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
 }
 
 .styles h1 {
-	font-size: 2.1rem;
-	font-family: 'Playfair Display', Georgia, serif;
-  	font-weight: normal;
-	font-style: italic;
-	padding-bottom: 20px;
+    font-size: 2.1rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: normal;
+    font-style: italic;
+    padding-bottom: 20px;
 }
 
 .styles span {
-	font-family: 'Playfair Display', Georgia, serif;
-  	font-weight: bold;
-	font-style: normal;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .styles p {
-	font-family: Raleway, Arial, sans-serif;
-  font-weight: 300;
-	font-style: normal;
-  margin: 0px auto;
-  line-height: 2rem;
-	font-size: 1rem;
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0px auto;
+    line-height: 2rem;
+    font-size: 1rem;
 }
+
 
 /* MOBILE: PRODUCT GALLERY */
 
 .categories {
-	max-width: 100%;
-	height: auto;
-	display: flex;
-	flex-flow: row wrap;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .categories a {
-	font-family: Raleway, Arial, sans-serif;
-	font-weight: 500;
-	font-style: normal;
-	font-size: 1.4rem;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	top: 50%;
-	left: 50%;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: white;
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.4rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
 }
 
 .mens {
-	background: 
-	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-	url(images/mens-category.jpg) no-repeat;
-	background-size: cover;
-	width: 100%;
-	padding-bottom: 50%;
-	flex-grow: 1 0 100%;
-	border: 4px solid white;
-	box-sizing: border-box;
-	border-left: 0px;
-	border-right: 0px;
-	position: relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/mens-category.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 50%;
+    flex-grow: 1 0 100%;
+    border: 4px solid white;
+    box-sizing: border-box;
+    border-left: 0px;
+    border-right: 0px;
+    position: relative;
 }
 
 .trends {
-	background: 
-	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-	url(images/trends-category.jpg) no-repeat;
-	background-size: cover;
-	max-width: 50%;
-	padding-bottom: 50%;
-	flex: 1 0 100%;
-	border: 4px solid white;
-	box-sizing: border-box;
-	border-left: 0px;
-	position: relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/trends-category.jpg) no-repeat;
+    background-size: cover;
+    max-width: 50%;
+    padding-bottom: 50%;
+    flex: 1 0 100%;
+    border: 4px solid white;
+    box-sizing: border-box;
+    border-left: 0px;
+    position: relative;
 }
 
 .glasses {
-	background: 
-	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-	url(images/glasses-category.jpg) no-repeat;
-	background-size: cover;
-	max-width: 50%;
-	padding-bottom: 50%;
-	flex: 1 0 100%;
-	border: 4px solid white;
-	box-sizing: border-box;
-	border-right: 0px;
-	position: relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/glasses-category.jpg) no-repeat;
+    background-size: cover;
+    max-width: 50%;
+    padding-bottom: 50%;
+    flex: 1 0 100%;
+    border: 4px solid white;
+    box-sizing: border-box;
+    border-right: 0px;
+    position: relative;
 }
 
 .sale {
-	background: 
-	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-	url(images/sale-category.jpg) no-repeat;
-	background-size: cover;
-	max-width: 50%;
-	padding-bottom: 50%;
-	flex: 1 0 100%;
-	border: 4px solid white;
-	border-left: 0px;
-	box-sizing: border-box;
-	position: relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/sale-category.jpg) no-repeat;
+    background-size: cover;
+    max-width: 50%;
+    padding-bottom: 50%;
+    flex: 1 0 100%;
+    border: 4px solid white;
+    border-left: 0px;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .bags {
-	background: 
-	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-	url(images/bags-category.jpg) no-repeat;
-	background-size: cover;
-	max-width: 50%;
-	padding-bottom: 50%;
-	flex: 1 0 100%;
-	margin: auto;
-	border: 4px solid white;
-	border-right: 0px;
-	box-sizing: border-box;
-	position: relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/bags-category.jpg) no-repeat;
+    background-size: cover;
+    max-width: 50%;
+    padding-bottom: 50%;
+    flex: 1 0 100%;
+    margin: auto;
+    border: 4px solid white;
+    border-right: 0px;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .womens {
-	background: 
-	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-	url(images/womens-category.jpg) no-repeat;
-	background-size: cover;
-	max-width: 100%;
-	padding-bottom: 50%;
-	flex: 1 0 100%;
-	border: 4px solid white;
-	box-sizing: border-box;
-	border-left: 0px;
-	border-right: 0px;
-	position: relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/womens-category.jpg) no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    padding-bottom: 50%;
+    flex: 1 0 100%;
+    border: 4px solid white;
+    box-sizing: border-box;
+    border-left: 0px;
+    border-right: 0px;
+    position: relative;
 }
+
 
 /* MOBILE: MOST-LOVED PRODUCTS  */
 
 .most-loved {
-height: 680px;
-padding-top: 100px;
-background-color: white;
+    height: 680px;
+    padding-top: 100px;
+    background-color: white;
 }
+
 
 /* * { box-sizing: border-box; } */
 
 .carousel container {
-	  overflow: hidden;
+    overflow: hidden;
 }
 
 .carousel {
-  background-color: white;
+    background-color: white;
 }
 
 .carousel-cell {
-	width: 100%;
-  counter-increment: gallery-cell;
-  padding-top: 40px;
-  padding-bottom: 100px;
-  text-align: center;
+    width: 100%;
+    counter-increment: gallery-cell;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    text-align: center;
 }
 
-
 .most-loved li {
-	display: inline;
-	text-align: center;
+    display: inline;
+    text-align: center;
 }
 
 .most-loved h1 {
-	font-size: 2.1rem;
-	font-family: 'Playfair Display', Georgia, serif;
-  	font-weight: normal;
-	color: #2d2d2d;
-	font-style: italic;
-	text-align: center;
-	margin-bottom: 20px;
-	margin-top: 60px;
+    font-size: 2.1rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: normal;
+    color: #2d2d2d;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .most-loved h2 {
-	font-family: 'Playfair Display', Georgia, serif;
-	font-weight: normal;
-	font-style: normal;
-	font-size: 1.3rem;
-	color: #e2574c;
-	margin-top: 0px;
-	margin-bottom: 20px;
-	text-align: center;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.3rem;
+    color: #e2574c;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .most-loved h3 {
-	font-family: Raleway, Arial, sans-serif;
-	font-weight: 300;
-	font-style: normal;
-	color: #969696;
-	font-size: 0.65rem;
-	text-transform: uppercase;
-	margin-top: 0px;
-	margin-bottom: 20px;
-	text-align: center;
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #969696;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .most-loved p {
-	font-family: Raleway, Arial, sans-serif;
-	color: #969696;
-	text-align: center;
+    font-family: Raleway, Arial, sans-serif;
+    color: #969696;
+    text-align: center;
 }
 
 .most-loved span {
-	font-family: 'Playfair Display', Georgia, serif;
-  	font-weight: bold;
-	font-style: normal;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .flickity-page-dots {
-	padding-bottom: 40px;
+    padding-bottom: 40px;
 }
+
 
 /* MOBILE: SIGN-UP FOR UPDATES */
 
 .updates {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	text-align: center;
-	height: 335px;
-	background-image: 
-	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-	url(images/wave-bkgd.jpg);
-	background-position: bottom;
-	padding: 0px 5px;
-	text-shadow: 1px 1px 2px #969696;
-	margin-bottom: 8px;
-	margin-top: 20px;
-	box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 335px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/wave-bkgd.jpg);
+    background-position: bottom;
+    padding: 0px 5px;
+    text-shadow: 1px 1px 2px #969696;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    box-sizing: border-box;
 }
 
 .updates h1 {
-	font-size: 2rem;
-	font-family: 'Playfair Display', Georgia, serif;
-  	font-weight: normal;
-	font-style: italic;
-	padding-bottom: 25px;
-	color: white;
+    font-size: 2rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: normal;
+    font-style: italic;
+    padding-bottom: 25px;
+    color: white;
 }
 
 .updates span {
-	font-family: 'Playfair Display', Georgia, serif;
-  	font-weight: bold;
-	font-style: normal;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .updates p {
-	font-family: Raleway, Arial, sans-serif;
-	color: white;
-	font-size: 1rem;
-  	font-weight: 300;
-	font-style: normal;
-	line-height: 2rem;
-	padding-bottom: 35px;
+    font-family: Raleway, Arial, sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 2rem;
+    padding-bottom: 35px;
 }
 
 .subscribe-form {
-	position: relative;
+    max-width: 100%;
+    position: relative;
 }
 
 .subscribe-input {
-	font-family: Raleway, Arial, sans-serif;
-	font-weight: 300;
-	font-style: normal;
-	font-size: 0.9rem;
-	background-color: white;
-	width: 350px;
-	height: 40px;
-	border-radius: 50px;
-	border: none;
-	box-sizing: border-box;
-	padding-left: 1.5rem;
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.9rem;
+    background-color: white;
+    width: 350px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 1.5rem;
 }
 
 .subscribe-submit {
-	background-color: #e2574c;
-	width: 110px;
-	border-radius: 20px;
-	font-family: Raleway, Arial, sans-serif;
-	font-weight: 500;
-	font-style: normal;
-	font-size: 0.9rem;
-	color: white;
-	height: 35px;
-	border: none; 
-	position: absolute;
-	top: 0.2rem;
-	right: 1.5rem;
+    background-color: #e2574c;
+    width: 110px;
+    border-radius: 20px;
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: white;
+    height: 35px;
+    border: none;
+    position: absolute;
+    top: 0.2rem;
+    right: 1.5rem;
 }
+
 
 /* MOBILE: FOOTER */
 
 footer {
-	width: 100%;
-  	height: 300px;
-	background-color: #242424;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
+    width: 100%;
+    height: 300px;
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .info {
-	width: 100%;
-	color: white;
-	font-family: 'Playfair Display', Georgia, serif;
-  	font-weight: normal;
-	font-style: normal;
-	font-size: 1.2rem;
+    width: 100%;
+    color: white;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.2rem;
 }
 
 .copyright {
-	line-height: 1.2rem;
-	margin-top: 0rem;
-	margin-bottom: 0.8rem;
+    line-height: 1.2rem;
+    margin-top: 0rem;
+    margin-bottom: 0.8rem;
 }
 
 .contact {
-	margin-top: 0rem;
-	margin-bottom: 0.8rem;
+    margin-top: 0rem;
+    margin-bottom: 0.8rem;
 }
 
 .address {
-	color: #969696;
-	margin-top: 0rem;
-	margin-bottom: 0.8rem;
-	line-height: 1.2rem;
+    color: #969696;
+    margin-top: 0rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.2rem;
 }
 
 .contact span {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
 .channels {
-	width: 100%;
-	list-style: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding-top: 1.4rem;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1.4rem;
 }
 
 .social-media a {
-	color: white;
-	text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .social-media li {
-	max-width: 100%;
-	font-family: Raleway, Arial, sans-serif;
-	font-size: 1rem;
-  	font-weight: 300;
-	font-style: normal;
-	padding: 0px 8px;
+    max-width: 100%;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: normal;
+    padding: 0px 8px;
 }
 
 .social-media-name {
-	font-size: 0px;
+    font-size: 0px;
 }
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    padding: 10px;
+    width: auto;
+    align-items: center;
+    z-index: 100000;
+    background-color: #e2574c;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    /* above all content */
+}
+
+#main[tabindex="-1"]:focus {
+    outline: 0;
+}
+
 
 /* TABLET  */
 
- @media screen and (min-width: 600px) {
-
-.content {
-	padding-top: 85px;
-}
-
-header {
-	height: 90px;
-	flex-wrap: none;
-}
-
-hr.rule {
-	display: none;
-}
-
-.logo {
-	order: 1;
-	width: 120px;
-}
-
-.logo img {
-	width: 120px;
-}
-
-.cart {
-	order: 3;
-	width: 120px;
-}
-
-.cart img {
-	width: 50px;
-	height: 50px;
-}
-
-.navigation {
-	order: 2;
-	width: 400px;
-	justify-content: center;
-	margin: 10px;
-	padding: 0;
-}
-
-/* TABLET: PRODUCT GALLERY */
-
-.categories {
-	height: 100%;
-}
-
-.products {
-	width: 100%;
-	height: auto;
-}
-
-.mens {
-	width: 50%;
-	padding-bottom: 25%;
-	border-right: 4px white solid;
-}
-
-.trends {
-	max-width: 25%;
-	padding-bottom: 25%;
-	border-left: 4px white solid;
-}
-
-.glasses {
-	max-width: 25%;
-	padding-bottom: 25%;
-	border-right: 0px;
-}
-
-.sale {
-	max-width: 25%;
-	padding-bottom: 25%;
-	border-left: 0px;
-}
-
-.bags {
-	max-width: 25%;
-	padding-bottom: 25%;
-	border-right: 4px white solid;
-}
-
-.womens {
-	max-width: 50%;
-	padding-bottom: 25%;
-	border-left: 4px white solid;
-}
-
-/* TABLET: CAROUSEL */
-
-.carousel-cell {
-	width: 50%;
-  counter-increment: gallery-cell;
-  padding-top: 40px;
-  text-align: center;
-}
-
-
-/* TABLET: UPDATES   */
-
-.updates h1 {
-	font-size: 2.3rem;
-}
-
-.updates p {
-	font-size: 1.2rem;
-}
-
-.subscription {
-	width: 445px;
-	display: flex:
-}
-
-.subscribe-input {
-	width: 445px;
-	height: 50px;
-}
-
-/* need to fix subscribe button is shifting: */
-
-.subscribe-submit {
-	width: 125px;
-	border-radius: 50px;
-	height: 45px;
-	font-size: 1rem;
-	right: 7.4rem;
-}
-
-/* TABLET FOOTER */
-
- footer {
-	padding: 0px 20px;
-} 
-
-.info {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-/* need to fix: social media
+@media screen and (min-width: 600px) {
+    .content {
+        padding-top: 85px;
+    }
+    header {
+        height: 90px;
+        flex-wrap: none;
+    }
+    hr.rule {
+        display: none;
+    }
+    .logo {
+        order: 1;
+        width: 120px;
+    }
+    .logo img {
+        width: 120px;
+    }
+    .cart {
+        order: 3;
+        width: 120px;
+    }
+    .cart img {
+        width: 50px;
+        height: 50px;
+    }
+    .navigation {
+        order: 2;
+        width: 400px;
+        justify-content: center;
+        margin: 10px;
+        padding: 0;
+    }
+    /* TABLET: PRODUCT GALLERY */
+    .categories {
+        height: 100%;
+    }
+    .products {
+        width: 100%;
+        height: auto;
+    }
+    .mens {
+        width: 50%;
+        padding-bottom: 25%;
+        border-right: 4px white solid;
+    }
+    .trends {
+        max-width: 25%;
+        padding-bottom: 25%;
+        border-left: 4px white solid;
+    }
+    .glasses {
+        max-width: 25%;
+        padding-bottom: 25%;
+        border-right: 0px;
+    }
+    .sale {
+        max-width: 25%;
+        padding-bottom: 25%;
+        border-left: 0px;
+    }
+    .bags {
+        max-width: 25%;
+        padding-bottom: 25%;
+        border-right: 4px white solid;
+    }
+    .womens {
+        max-width: 50%;
+        padding-bottom: 25%;
+        border-left: 4px white solid;
+    }
+    /* TABLET: CAROUSEL */
+    .carousel-cell {
+        width: 50%;
+        counter-increment: gallery-cell;
+        padding-top: 40px;
+        text-align: center;
+    }
+    /* TABLET: UPDATES   */
+    .updates h1 {
+        font-size: 2.3rem;
+    }
+    .updates p {
+        font-size: 1.2rem;
+    }
+    .subscription {
+        width: 445px;
+        display: flex:
+    }
+    .subscribe-input {
+        width: 445px;
+        height: 50px;
+    }
+    /* need to fix subscribe button is shifting: */
+    .subscribe-submit {
+        width: 125px;
+        border-radius: 50px;
+        height: 45px;
+        font-size: 1rem;
+        right: 7.4rem;
+    }
+    /* TABLET FOOTER */
+    footer {
+        padding: 0px 20px;
+    }
+    .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* need to fix: social media
 channels are being truncated on the right: */
-
-.contact {
-	text-align: left;
+    .contact {
+        text-align: left;
+    }
+    .social-media-name {
+        font-size: 1rem;
+    }
+    .channels {
+        display: block;
+        line-height: 2rem;
+        text-align: left;
+    }
 }
 
-.social-media-name {
-	font-size: 1rem;
-}
-
-.channels {
-	display: block;
-	line-height: 2rem;
-	text-align: left;
-}
-
-} 
 
 /* DESKTOP */
 
 @media screen and (min-width: 1240px) {
-
-/* DESKTOP: HEADER */
-
-header {
-	height: 90px;
-	margin: 0px auto;
-	flex-wrap: none;
-}
-
-.content {
-padding-top: 90px;
-}
-
-hr.rule {
-	display: none;
-}
-
-.logo {
-	order: 1;
-	width: 240px;
-}
-
-.logo img {
-	width: 162px;
-}
-
-.cart {
-	order: 3;
-	width: 240px;
-}
-
-.cart img {
-	width: 64px;
-	height: 64px;
-}
-
-.navigation {
-	order: 2;
-	width: 710px;
-	font-size: 1rem;
-	justify-content: center;
-	margin: 10px;
-}
-
-/* DESKTOP: HERO IMAGE */
-
-.hero-image {
-	height: 550px;
-	background:
-	linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-	url(images/banner-girl.png) no-repeat bottom center,
-	url(images/flower-bkgd.jpg) repeat-x center;
-	background-size: contain, auto 98%;
-}
-
-.hero-image h3 {
-	text-transform: uppercase;
-	color: white;
-	font-size: 1.2rem;
-	padding-bottom: 20px;
-	text-shadow: 1px 1px 2px #969696;
-}
-
-.hero-image h1 {
-	font-family: 'Playfair Display', Georgia, serif;
-  	font-weight: normal;
-	font-style: normal;
-  	font-size: 4rem;
-  	color: white;
-	text-shadow: 1px 1px 2px #969696;
-	padding: 0px 40px 0px 40px;
-}
-
-/* DESKTOP: STYLES */
-
-.styles {
-	width: 100%;
-}
-
-.styles p {
-	font-size: 1.2rem;
-	padding: 0px 380px;
-}
-
-.styles h1 {
-	font-size: 2.3rem;
-}
-
-
-/* DESKTOP: MOST-LOVED */
-
-.carousel-cell {
-	width: 25%;
-  height: 510px;
-  counter-increment: gallery-cell;
-  padding-top: 40px;
-  text-align: center;
-}
-
-/* DESKTOP: UPDATES */
-
-.updates {
-	padding: 0px 380px;
-}
-
-.updates h1 {
-	font-size: 2.3rem;
-}
-
-.updates p {
-	font-size: 1.2rem;
-}
-
-.subscription {
-	width: 445px;
-	display: flex:
-}
-
-.subscribe-input {
-	width: 445px;
-	height: 50px;
-}
-
-.subscribe-submit {
-	width: 125px;
-	border-radius: 50px;
-	font-size: 1rem;
-	color: white;
-	height: 45px;
-	right: 7.5rem;
-}
-
-/* DESKTOP: FOOTER */
-
-
+    /* DESKTOP: HEADER */
+    header {
+        height: 90px;
+        margin: 0px auto;
+        flex-wrap: none;
+    }
+    .content {
+        padding-top: 90px;
+    }
+    hr.rule {
+        display: none;
+    }
+    .logo {
+        order: 1;
+        width: 240px;
+    }
+    .logo img {
+        width: 162px;
+    }
+    .cart {
+        order: 3;
+        width: 240px;
+    }
+    .cart img {
+        width: 64px;
+        height: 64px;
+    }
+    .navigation {
+        order: 2;
+        width: 710px;
+        font-size: 1rem;
+        justify-content: center;
+        margin: 10px;
+    }
+    /* DESKTOP: HERO IMAGE */
+    .hero-image {
+        height: 550px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/banner-girl.png) no-repeat bottom center, url(images/flower-bkgd.jpg) repeat-x center;
+        background-size: contain, auto 98%;
+    }
+    .hero-image h3 {
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.2rem;
+        padding-bottom: 20px;
+        text-shadow: 1px 1px 2px #969696;
+    }
+    .hero-image h1 {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 4rem;
+        color: white;
+        text-shadow: 1px 1px 2px #969696;
+        padding: 0px 40px 0px 40px;
+    }
+    /* DESKTOP: STYLES */
+    .styles {
+        width: 100%;
+    }
+    .styles p {
+        font-size: 1.2rem;
+        padding: 0px 380px;
+    }
+    .styles h1 {
+        font-size: 2.3rem;
+    }
+    /* DESKTOP: MOST-LOVED */
+    .carousel-cell {
+        width: 25%;
+        height: 510px;
+        counter-increment: gallery-cell;
+        padding-top: 40px;
+        text-align: center;
+    }
+    /* DESKTOP: UPDATES */
+    .updates {
+        padding: 0px 380px;
+    }
+    .updates h1 {
+        font-size: 2.3rem;
+    }
+    .updates p {
+        font-size: 1.2rem;
+    }
+    .subscription {
+        width: 445px;
+        display: flex:
+    }
+    .subscribe-input {
+        width: 445px;
+        height: 50px;
+    }
+    .subscribe-submit {
+        width: 125px;
+        border-radius: 50px;
+        font-size: 1rem;
+        color: white;
+        height: 45px;
+        right: 7.5rem;
+    }
+    /* DESKTOP: FOOTER */
 }
