@@ -996,24 +996,9 @@ channels are being truncated on the right: */
         font-size: 1.2rem;
     }
 
-    /* .subscription {
-        width: 445px;
-        display: flex:
+    .subscribe-form {
+        width: 33.33%;
     }
-
-    .subscribe-input {
-        width: 445px;
-        height: 50px;
-    }
-
-    .subscribe-submit {
-        width: 125px;
-        border-radius: 50px;
-        font-size: 1rem;
-        color: #fff;
-        height: 45px;
-        right: 7.5rem;
-    } */
     
     /* DESKTOP: FOOTER */
 }
