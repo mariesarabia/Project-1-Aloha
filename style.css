@@ -288,6 +288,10 @@ hr.rule {
     margin: 5px;
 }
 
+.navigation ul {
+    padding-top: 1rem;
+}
+
 .navigation li {
     list-style: none;
     display: inline;
@@ -579,7 +583,7 @@ hr.rule {
     font-weight: normal;
     font-style: italic;
     padding-bottom: 25px;
-    color: white;
+    color: #fff;
 }
 
 .updates span {
@@ -590,7 +594,7 @@ hr.rule {
 
 .updates p {
     font-family: Raleway, Arial, sans-serif;
-    color: white;
+    color: #fff;
     font-size: 1rem;
     font-weight: 300;
     font-style: normal;
@@ -599,38 +603,38 @@ hr.rule {
 }
 
 .subscribe-form {
-    max-width: 100%;
     position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .subscribe-input {
-    font-family: Raleway, Arial, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 0.9rem;
-    background-color: white;
-    width: 350px;
-    height: 40px;
-    border-radius: 50px;
+    width: 100%;
+    padding: 0.7rem 1.75rem;
+    border-radius: 25px;
     border: none;
+    font-size: 1rem;
+    color: #2d2d2d;
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     box-sizing: border-box;
-    padding-left: 1.5rem;
 }
 
-.subscribe-submit {
-    background-color: #e2574c;
-    width: 110px;
-    border-radius: 20px;
+.subscribe-button {
+    position: absolute;
     font-family: Raleway, Arial, sans-serif;
+    font-size: 0.9rem;
     font-weight: 500;
     font-style: normal;
-    font-size: 0.9rem;
-    color: white;
-    height: 35px;
+    color: #fff;
+    background-color: #e2574c;
     border: none;
-    position: absolute;
-    top: 0.2rem;
-    right: 1.5rem;
+    border-radius: 50px;
+    padding: 0.60rem 1.48rem;
+    transform: translate(50%, -50%);
+    top: 50%;
 }
 
 
@@ -645,11 +649,12 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .info {
     width: 100%;
-    color: white;
+    color: #fff;
     font-family: 'Playfair Display', Georgia, serif;
     font-weight: normal;
     font-style: normal;
@@ -688,7 +693,7 @@ footer {
 }
 
 .social-media a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -726,7 +731,7 @@ footer {
     background-color: #e2574c;
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: #fff;
     /* above all content */
 }
 
@@ -741,28 +746,35 @@ footer {
     .content {
         padding-top: 85px;
     }
+
     header {
         height: 90px;
         flex-wrap: none;
     }
+
     hr.rule {
         display: none;
     }
+
     .logo {
         order: 1;
         width: 120px;
     }
+
     .logo img {
         width: 120px;
     }
+
     .cart {
         order: 3;
         width: 120px;
     }
+
     .cart img {
         width: 50px;
         height: 50px;
     }
+
     .navigation {
         order: 2;
         width: 400px;
@@ -770,44 +782,53 @@ footer {
         margin: 10px;
         padding: 0;
     }
+
     /* TABLET: PRODUCT GALLERY */
     .categories {
         height: 100%;
     }
+
     .products {
         width: 100%;
         height: auto;
     }
+
     .mens {
         width: 50%;
         padding-bottom: 25%;
-        border-right: 4px white solid;
+        border-right: 4px #fff solid;
     }
+
     .trends {
         max-width: 25%;
         padding-bottom: 25%;
-        border-left: 4px white solid;
+        border-left: 4px #fff solid;
     }
+
     .glasses {
         max-width: 25%;
         padding-bottom: 25%;
         border-right: 0px;
     }
+
     .sale {
         max-width: 25%;
         padding-bottom: 25%;
         border-left: 0px;
     }
+
     .bags {
         max-width: 25%;
         padding-bottom: 25%;
-        border-right: 4px white solid;
+        border-right: 4px #fff solid;
     }
+
     .womens {
         max-width: 50%;
         padding-bottom: 25%;
-        border-left: 4px white solid;
+        border-left: 4px #fff solid;
     }
+
     /* TABLET: CAROUSEL */
     .carousel-cell {
         width: 50%;
@@ -815,51 +836,57 @@ footer {
         padding-top: 40px;
         text-align: center;
     }
+
     /* TABLET: UPDATES   */
     .updates h1 {
         font-size: 2.3rem;
     }
+
     .updates p {
         font-size: 1.2rem;
     }
-    .subscription {
-        width: 445px;
-        display: flex:
+
+    .subscribe-form {
+        width: 67%;
     }
+
     .subscribe-input {
-        width: 445px;
-        height: 50px;
+        width: 100%;
+        padding: 0.75rem 1.75rem;
     }
-    /* need to fix subscribe button is shifting: */
-    .subscribe-submit {
-        width: 125px;
-        border-radius: 50px;
-        height: 45px;
-        font-size: 1rem;
-        right: 7.4rem;
+
+    .subscribe-button {
+        padding: 0.65rem 1.75rem;
+        right: 4rem;
     }
+
     /* TABLET FOOTER */
     footer {
         padding: 0px 20px;
     }
+
     .info {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     /* need to fix: social media
 channels are being truncated on the right: */
     .contact {
         text-align: left;
     }
+
     .social-media-name {
         font-size: 1rem;
     }
+
     .channels {
         display: block;
         line-height: 2rem;
         text-align: left;
     }
+
 }
 
 
@@ -872,27 +899,34 @@ channels are being truncated on the right: */
         margin: 0px auto;
         flex-wrap: none;
     }
+
     .content {
         padding-top: 90px;
     }
+
     hr.rule {
         display: none;
     }
+
     .logo {
         order: 1;
         width: 240px;
     }
+    
     .logo img {
         width: 162px;
     }
+
     .cart {
         order: 3;
         width: 240px;
     }
+
     .cart img {
         width: 64px;
         height: 64px;
     }
+
     .navigation {
         order: 2;
         width: 710px;
@@ -900,39 +934,46 @@ channels are being truncated on the right: */
         justify-content: center;
         margin: 10px;
     }
+
     /* DESKTOP: HERO IMAGE */
     .hero-image {
         height: 550px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/banner-girl.png) no-repeat bottom center, url(images/flower-bkgd.jpg) repeat-x center;
         background-size: contain, auto 98%;
     }
+
     .hero-image h3 {
         text-transform: uppercase;
-        color: white;
+        color: #fff;
         font-size: 1.2rem;
         padding-bottom: 20px;
         text-shadow: 1px 1px 2px #969696;
     }
+
     .hero-image h1 {
         font-family: 'Playfair Display', Georgia, serif;
         font-weight: normal;
         font-style: normal;
         font-size: 4rem;
-        color: white;
+        color: #fff;
         text-shadow: 1px 1px 2px #969696;
         padding: 0px 40px 0px 40px;
     }
+
     /* DESKTOP: STYLES */
     .styles {
         width: 100%;
     }
+
     .styles p {
         font-size: 1.2rem;
         padding: 0px 380px;
     }
+
     .styles h1 {
         font-size: 2.3rem;
     }
+
     /* DESKTOP: MOST-LOVED */
     .carousel-cell {
         width: 25%;
@@ -941,31 +982,38 @@ channels are being truncated on the right: */
         padding-top: 40px;
         text-align: center;
     }
+
     /* DESKTOP: UPDATES */
     .updates {
         padding: 0px 380px;
     }
+
     .updates h1 {
         font-size: 2.3rem;
     }
+
     .updates p {
         font-size: 1.2rem;
     }
-    .subscription {
+
+    /* .subscription {
         width: 445px;
         display: flex:
     }
+
     .subscribe-input {
         width: 445px;
         height: 50px;
     }
+
     .subscribe-submit {
         width: 125px;
         border-radius: 50px;
         font-size: 1rem;
-        color: white;
+        color: #fff;
         height: 45px;
         right: 7.5rem;
-    }
+    } */
+    
     /* DESKTOP: FOOTER */
 }
