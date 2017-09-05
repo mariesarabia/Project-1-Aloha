@@ -141,26 +141,10 @@ table {
 
 @font-face {
     font-family: 'Raleway';
-    src: url('fonts/Raleway-LightItalic.eot');
-    src: url('fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'), url('fonts/Raleway-LightItalic.woff') format('woff'), url('fonts/Raleway-LightItalic.ttf') format('truetype'), url('fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Raleway';
     src: url('fonts/Raleway-Medium.eot');
     src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/Raleway-Medium.woff') format('woff'), url('fonts/Raleway-Medium.ttf') format('truetype'), url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-MediumItalic.eot');
-    src: url('fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'), url('fonts/Raleway-MediumItalic.woff') format('woff'), url('fonts/Raleway-MediumItalic.ttf') format('truetype'), url('fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
-    font-weight: 500;
-    font-style: italic;
 }
 
 @font-face {
@@ -185,14 +169,6 @@ table {
     src: url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/PlayfairDisplay-Bold.woff') format('woff'), url('fonts/PlayfairDisplay-Bold.ttf') format('truetype'), url('fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('fonts/PlayfairDisplay-BoldItalic.eot');
-    src: url('fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'), url('fonts/PlayfairDisplay-BoldItalic.woff') format('woff'), url('fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'), url('fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
 }
 
 @font-face {

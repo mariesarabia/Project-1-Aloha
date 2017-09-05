@@ -15,6 +15,7 @@ This was also my first taste of version control using Git and the creation and m
 
 ## LEARNINGS: 
 Through this project I learned the following: 
+
 ### Git/GitHub
 * Proper creation and maintenance of root directory
 * Initializing a Git repository in the root directory 
