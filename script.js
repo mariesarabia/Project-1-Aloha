@@ -42,4 +42,32 @@ $(document).ready(function() {
 
     });
 
+$('.subscribe-button').on('click', function(event){
+
+    var subscribeEmail = document.forms["newsletter-subscription"]["email"].value;
+
+    $('#subscribe').val(); 
+    if($.trim(subscribeEmail).length == 0) {
+      alert('Please enter valid email address');
+    }
+    if (validateEmail(subscribeEmail)) {
+      alert('Thanks for subscribing!');
+    }
+    else {
+      alert('Invalid Email Address');
+              event.preventDefault();
+    }
+
+});
+
+function validateEmail(subscribeEmail) {
+    var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    if (filter.test(subscribeEmail)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
 });
