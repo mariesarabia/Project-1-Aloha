@@ -215,6 +215,10 @@ table {
 
 */
 
+* { 
+    box-sizing: border-box; 
+}
+
 
 /* MOBILE: TEXT STYLES */
 
@@ -232,10 +236,12 @@ p {
 .main-container {
     width: 100%;
     height: auto;
+    margin: 0;
 }
 
 header {
     width: 100%;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -485,9 +491,6 @@ hr.rule {
     background-color: white;
 }
 
-
-/* * { box-sizing: border-box; } */
-
 .carousel container {
     overflow: hidden;
 }
@@ -607,6 +610,7 @@ hr.rule {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
 }
 
 .subscribe-input {
@@ -1016,4 +1020,36 @@ footer {
     }
     
     /* DESKTOP: FOOTER */
+
+    footer {
+        text-align: left;
+        padding: 0 4rem;
+        box-sizing: border-box;
+    }
+
+    .info-container {
+        width: 1240px;
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+
+    .contact {
+        line-height: 1.5;
+    }
+
+    .social-media ul {
+        padding-right: 4rem;
+    }
+    
+    .social-media li {
+        display: block;
+    }
+
+    .copyright {
+        margin-bottom: 1rem;
+    }
+
+    .contact {
+        margin-bottom: 1rem;
+    }
 }
