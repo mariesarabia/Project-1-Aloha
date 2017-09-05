@@ -1,6 +1,6 @@
 # Project1-Aloha
 
-![front-page](https://github.com/mariesarabia/Project-1-Aloha/blob/master/images/screenshot-alohaproject.png "Aloha Front Page")
+![homepage](https://github.com/mariesarabia/Project-1-Aloha/blob/master/images/screenshot-alohaproject.png "Aloha Homepage")
 
 For my very first project at Red Academy, I created the homepage of an ecommerce website for the Aloha Apparel Co., using HTML and CSS, with interactivity using JavaScript. A mobile-first approach was implemented, and responsive layout was created using the Flexbox method, optimized for three required screen sizes: mobile, tablet (600px) and desktop (1240px). 
 
@@ -11,7 +11,7 @@ This was also my first taste of version control using Git and the creation and m
 * HTML
 * CSS 
 * Javascript
-* JQuery
+* jQuery
 
 ## LEARNINGS: 
 Through this project I learned the following: 
