@@ -486,16 +486,12 @@ hr.rule {
 /* MOBILE: MOST-LOVED PRODUCTS  */
 
 .most-loved {
-    height: 680px;
-    padding-top: 100px;
+    padding-top: 4rem;
     background-color: white;
 }
 
-.carousel container {
-    overflow: hidden;
-}
-
 .carousel {
+    overflow: hidden;
     background-color: white;
 }
 
@@ -994,6 +990,12 @@ footer {
     }
 
     /* DESKTOP: MOST-LOVED */
+
+    .product-container {
+        width: 1240px;
+        padding: 0;
+        margin: 0 auto;
+    }
     .carousel-cell {
         width: 25%;
         height: 510px;
